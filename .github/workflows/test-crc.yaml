@@ -1,5 +1,6 @@
 name: Test Operator on CRC
 on:
+  workflow_dispatch: {}
   push:
     branches: [ try-gh ]
   pull_request: {}
