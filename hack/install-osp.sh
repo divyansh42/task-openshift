@@ -114,7 +114,7 @@ esac
 
 # wait until tekton pipelines operator is created
 echo "Waiting for OpenShift Pipelines Operator to be created..."
-timeout 2m bash <<- EOF
+timeout 4m bash <<- EOF
   until oc get deployment openshift-pipelines-operator -n openshift-operators; do
     sleep 5
   done
